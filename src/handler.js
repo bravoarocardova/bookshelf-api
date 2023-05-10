@@ -94,13 +94,16 @@ const getAllBooks = (request, h) => {
   }
 
   const book = [];
-  booksFilter.forEach((v) => {
-    book.push({
-      id: v.id,
-      name: v.name,
-      publisher: v.publisher,
+  if (booksFilter.length !== 0) {
+    booksFilter.forEach((v) => {
+      book.push({
+        id: v.id,
+        name: v.name,
+        publisher: v.publisher,
+      });
     });
-  });
+  }
+
   return h.response({
     status: 'success',
     data: {

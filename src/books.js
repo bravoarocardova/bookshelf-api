@@ -1,7 +1,7 @@
 const books = [
   // {
   //   id: 'Qbax5Oy7L8WKf74l',
-  //   name: 'Buku A',
+  //   name: 'Dicoding',
   //   year: 2010,
   //   author: 'John Doe',
   //   summary: 'Lorem ipsum dolor sit amet',
